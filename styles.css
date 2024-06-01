@@ -1,0 +1,1513 @@
+/* --------------TO DO ------------------ */
+
+/* Make a frame/border around videos (and other elements?) */
+
+
+
+/* ------------FONT IMPORT-----------  */
+
+@import url('https://fonts.googleapis.com/css2?family=Coustard&family=Gentium+Book+Plus&family=Indie+Flower&family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sacramento&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Norican&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Homemade+Apple&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mrs+Saint+Delafield&display=swap');
+
+/* Alex Brush  */
+
+@import url('https://fonts.googleapis.com/css2?family=Alex+Brush&display=swap');
+
+/* Playfair Display  */
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+
+/* ----------------------- */
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+    /* outline: 1px solid green !important; */
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+/* || -----------VARIABLES------------ */
+
+/* --- COLOUR PALETTE(s) |||  */
+
+/* most recent color pallet on top */
+
+.pastel-mode {
+    --COLOR-ONE: #fff;
+    --COLOR-TWO: #000;
+    --COLOR-THREE: #7393B3;
+    --COLOR-FOUR: #dedee2;
+    --COLOR-FIVE: #D5BE98;
+    --COLOR-SIX: #788FA6;
+    --COLOR-SEVEN: #D4B6B6;
+    --COLOR-EIGHT: #DAAAAA;
+
+    --COLOR-TEXT: #000;
+    --COLOR-TEXT2: #fff;
+}
+
+:root {
+    --COLOR-ONE: #f07575;
+    --COLOR-TWO: #D5A5A8;
+    --COLOR-THREE: #f5d5d5;
+    --COLOR-FOUR: #eca3a3;
+    --COLOR-FIVE: #f7b3b3;
+    --COLOR-SIX: #f5a976;
+    --COLOR-SEVEN: #333;
+    --COLOR-EIGHT: #FFFCC9;
+    --COLOR-NINE: #6D7123;
+
+    --COLOR-TEXT: #4e2020;
+    --COLOR-TEXT2: #fff;
+}
+
+.blue-mode {
+    --COLOR-ONE: #485cb1;
+    --COLOR-TWO: #70a1bd;
+    --COLOR-THREE: #d5ebf5;
+    --COLOR-FOUR: #a3e1ec;
+    --COLOR-FIVE: #2f5bec;
+    --COLOR-SIX: #c5d3e0;
+    --COLOR-SEVEN: #593c66;
+    --COLOR-EIGHT: #c5e7e2;
+    --COLOR-NINE: #0e004d;
+
+    --COLOR-TEXT: #4e2020;
+    --COLOR-TEXT2: #fff;
+}
+
+.bisque-mode {
+    --COLOR-ONE: #f07575;
+    --COLOR-TWO: #ecc2c2;
+    --COLOR-THREE: #f5d5d5;
+    --COLOR-FOUR: #eca3a3;
+    --COLOR-FIVE: #f7b3b3;
+    --COLOR-SIX: #833434;
+    --COLOR-SEVEN: #333;
+
+    --COLOR-TEXT: #4e2020;
+    --COLOR-TEXT2: #fff;
+}
+
+
+
+
+/* --- FONT PALETTE |||  */
+
+:root {
+    /* FOR HEADINGS */
+    --FONT-ONE: 'Playfair Display', serif;
+    --FONT-TWO: 'Alex Brush', cursive;
+    --FONT-THREE: Arial, sans-serif;
+    --FONT-FOUR: 'Norican', cursive;
+    --FONT-FIVE: 'Homemade Apple', cursive;
+    --FONT-SIX: 'Mrs Saint Delafield', cursive;
+    --FONT-SEVEN: Calibri, sans-serif;
+}
+
+/* --------------------------------------------- */
+/* NAVBAR */
+
+.stickyheader {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+nav {
+    font-size: 7px;
+    min-width: 100%;
+    height: 45px;
+    background-color: var(--COLOR-SEVEN);
+    overflow: hidden;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+}
+
+nav h1 {
+    display: inline;
+    font-size: 20px;
+    text-align: right;
+    padding-right: 20px;
+    color: var(--COLOR-TWo);
+    font-family: 'Sacramento', cursive;
+    text-shadow: 2px 2px 4px var(--COLOR-SEVEN);
+}
+
+.topnav ul {
+    display: none;
+}
+
+
+@media screen and (min-width: 960px) {
+
+    .topnav {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    .topnav a {
+        float: right;
+        display: block;
+        text-align: left;
+        color: var(--COLOR-TEXT);
+        text-align: center;
+        text-decoration: none;
+        font-size: 15px;
+    }
+
+    .topnav a:hover {
+        background-color: var(--COLOR-SEVEN);
+        /* color: #a33131;  */
+        color: white;
+    }
+}
+
+
+/* --------------------------------------------- */
+
+/* SECTION ONE (HERO Section) 'Lara Grogan - Singer/Songerwriter/Composer */
+
+.section1 {
+    /* background-color: var(--COLOR-FIVE); */
+
+    background-image: url(images/LaraMain_600pw.jpeg);
+    height: 80vh;
+    background-position: 45% 55%;
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: var(--COLOR-TEXT2);
+}
+
+#LARA {
+    display: block;
+    height: 140px;
+    left: 30px;
+    padding: 37px 35px 0px 20px;
+    word-wrap: break-word;
+    font-family: var(--FONT-TWO);
+    color: var(--COLOR-ONE);
+
+    font-size: 32px;
+    text-shadow: 2px 2px 12px var(--COLOR-NINE);
+}
+
+#LARA .large {
+    font-size: 80px;
+    /* Font size for 'L' and 'G' */
+}
+
+#p1 {
+    font-size: 26px;
+    padding-left: 22px;
+    padding-bottom: 100px;
+    color: var(--COLOR-ONE);
+    text-shadow: 1px 1px 1px var(--COLOR-ONE);
+    font-family: var(--FONT-ONE);
+}
+
+.flex-container1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    padding-left: 16px;
+    padding-bottom: 80px;
+}
+
+.flex-container1>div {
+    background-color: var(--COLOR-SIX);
+    margin-left: 7px;
+    padding-left: 3px;
+    padding-right: 3px;
+    font-size: 17px;
+    border-radius: 10%;
+}
+
+.fa {
+    padding: 30px;
+    text-decoration: none;
+}
+
+.fa:hover {
+    background-color: var(--COLOR-TWO);
+}
+
+.fa-facebook {
+    color: var(--COLOR-TWO);
+    text-decoration: none;
+}
+
+.fa-instagram {
+    color: var(--COLOR-EIGHT);
+    text-decoration: none;
+}
+
+.fa-youtube {
+    color: var(--COLOR-EIGHT);
+    text-decoration: none;
+}
+
+.fa-tiktok {
+    color: var(--COLOR-EIGHT);
+    text-decoration: none;
+}
+
+#button1 {
+    background-color: var(--COLOR-SIX);
+    padding: 15px;
+    width: 150px;
+    margin: 0 0 10px 25px;
+
+    border-radius: 5%;
+    border: none;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: var(--FONT-THREE);
+    color: var(--COLOR-ONE);
+    text-shadow: 1px 1px var(--COLOR-EIGHT);
+}
+
+#button1:hover {
+    background-color: var(--COLOR-EIGHT);
+    cursor: pointer;
+}
+
+
+
+@media screen and (min-width: 600px) {
+
+    .section1 {
+        background-image: url(images/LaraMain_780pw.jpeg);
+        background-position: 10% 90%;
+        height: 80vh;
+    }
+
+    #LARA {
+        font-size: 64px;
+        padding-left: 22px;
+    }
+
+    #p1 {
+        font-size: 34px;
+        padding-left: 22px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+
+    .section1 {
+        background-image: url(images/LaraMain_1060pw.jpeg);
+        height: 100vh;
+    }
+
+    #LARA {
+        padding-left: 22px;
+    }
+
+    #p1 {
+        font-size: 34px;
+        padding-left: 22px;
+    }
+}
+
+@media screen and (min-width: 1050px) {
+
+    .section1 {
+        background-image: url(images/LaraMain_1600pw.jpeg);
+        background-position: 20% 0%;
+    }
+
+    .flex-container1 {
+        padding-left: 90px;
+        padding-bottom: 80px;
+    }
+
+    #button1 {
+        padding: 15px;
+        width: 150px;
+        margin: 0 0 0 120px;
+    }
+
+    #LARA {
+        padding-left: 90px;
+    }
+
+    #p1 {
+        padding-left: 90px;
+    }
+}
+
+@media screen and (min-width: 1500px) {
+
+    .section1 {
+        background-image: url(images/LaraMain.jpeg);
+        background-position: 90% 0%;
+    }
+
+    #LARA {
+        font-size: 10rem;
+        padding-top: 5rem;
+        padding-bottom: 12rem;
+    }
+
+    #p1 {
+        font-size: 4.5rem;
+        padding-bottom: 200px;
+    }
+
+    #LARA .large {
+        font-size: 160px;
+    }
+
+}
+
+
+/* ------------------------------------------- */
+
+/* SECTION 2  - 'New Music and Releases/The Sculptor' */
+
+.section2 {
+    height: auto;
+    background-color: var(--COLOR-SIX);
+    background-image: url('images/textures/texture1.jpg');
+    background-size: cover;
+    background-position: top center;
+    position: relative;
+    isolation: isolate;
+    font-size: 24px;
+    padding: 8px;
+}
+
+.section2::after {
+    content: '';
+    position: absolute;
+    background-size: cover;
+    background-position: center;
+    z-index: -1;
+    inset: 0;
+    background-color: var(--COLOR-FOUR);
+    opacity: 0.8;
+}
+
+.headingmainS2 {
+    font-size: 45px;
+    font-family: var(--FONT-TWO);
+    color: var(--COLOR-TWO);
+
+    text-align: center;
+
+    padding: 20px 0 0 0;
+
+}
+
+.headingSection2 {
+    font-size: 30px;
+
+    opacity: 1;
+    padding: 70px 10px 50px;
+    font-family: var(--FONT-ONE), sans-serif;
+    text-align: center;
+    color: var(--COLOR-TWO);
+    text-shadow: 1px 1px 1px var(--COLOR-SEVEN);
+}
+
+.headingSection2a {
+    padding: 10px;
+}
+
+.headingSection2b {
+    padding: 10px;
+}
+
+.column2 {
+    font-family: var(--FONT-SEVEN);
+    flex: 50%;
+    padding: 10px 80px 30px 80px;
+    font-size: 17px;
+    text-align: center;
+    line-height: 24px;
+}
+
+iframe {
+    display: block;
+    margin: 0 auto;
+    padding-bottom: 30px;
+    width: 98%;
+
+}
+
+
+@media (min-width: 600px) {
+
+    .section2 p {
+        font-size: 20px;
+        text-shadow: 1px 1px var(--COLOR-SEVEN)
+    }
+
+    .row2 {
+        display: block;
+    }
+
+    iframe {
+        width: 78%;
+    }
+}
+
+@media (min-width: 768px) {
+
+    .section2 {
+        min-height: 120vh;
+    }
+
+    .headingSection2 {
+        font-size: 40px;
+        padding: 0px 10px 50px;
+    }
+
+    .headingmainS2 {
+        font-size: 80px;
+        padding-bottom: 0;
+    }
+
+    .row2 {
+        display: flex;
+    }
+
+    .column2 {
+        flex: 50%;
+        padding: 10px 100px 50px;
+        font-size: 17px;
+        text-align: center;
+        line-height: 24px;
+    }
+
+    iframe {
+        width: 65%;
+    }
+}
+
+@media (min-width: 960px) {
+
+    .section2 {
+        padding-bottom: 50px;
+    }
+
+    .headingmainS2 {
+        font-size: 90px;
+    }
+
+    .headingSection2 {
+        padding-top: 20px;
+
+    }
+
+    .row2a {
+        width: 65%;
+        margin: 0 auto;
+    }
+}
+
+@media screen and (min-width: 1500px) {
+
+    .headingmainS2 {
+        padding-top: 5rem;
+        font-size: 7rem;
+    }
+
+    .headingSection2 {
+        padding-bottom: 5rem;
+
+    }
+
+    .column2 p {
+        font-size: 2rem;
+        line-height: 1.8rem;
+        padding-bottom: 5rem;
+    }
+
+    iframe {
+        width: 85%;
+        height: 45rem;
+        padding-bottom: 6rem;
+        /* box-shadow: 0 0 120px  rgb(243, 224, 224); */
+    }
+
+}
+
+
+
+
+/* SECTION 3 - 'New Music and Releases' - WHAT WAS MINE */
+
+/* --------OVERALL SECTION STYLES----------- */
+
+.section3 {
+    height: auto;
+
+    background: linear-gradient(-45deg, var(--COLOR-FIVE), var(--COLOR-EIGHT));
+    /* background-color: var(--COLOR-TWO); */
+    /* background-image: url('images/city/__beautiful-hand-draw-city-skyline-sketch_1035-20293.avif'); */
+    background-size: cover;
+    background-position: top center;
+    position: relative;
+    isolation: isolate;
+    font-size: 24px;
+    padding: 8px;
+}
+
+.section3::after {
+    content: '';
+    position: absolute;
+    background-size: cover;
+    background-position: center;
+    z-index: -1;
+    inset: 0;
+
+
+    opacity: 0.2;
+}
+
+.headingmainS3 {
+    font-size: 45px;
+    font-family: var(--FONT-TWO);
+    color: var(--COLOR-TWO);
+
+    text-align: center;
+
+    padding: 20px 0 0 0;
+
+}
+
+/* Headings and Text Styles */
+
+.headingSection3 {
+    font-size: 30px;
+
+    opacity: 1;
+    padding: 70px 10px 50px;
+    font-family: var(--FONT-ONE), sans-serif;
+    text-align: center;
+    color: var(--COLOR-TWO);
+    text-shadow: 1px 1px 1px var(--COLOR-SEVEN);
+}
+
+.headingSection3a {
+    padding: 10px;
+}
+
+.headingSection3b {
+    padding: 10px;
+}
+
+
+/* Column and Layout Styles */
+
+.column2 {
+    font-family: var(--FONT-SEVEN);
+    flex: 50%;
+    padding: 10px 80px 30px 80px;
+    font-size: 17px;
+    text-align: center;
+    line-height: 24px;
+}
+
+iframe {
+    display: block;
+    margin: 0 auto;
+    padding-bottom: 30px;
+    width: 98%;
+
+}
+
+/* Media Queries */
+
+@media (min-width: 600px) {
+    /* Styles for screens wider than 600px */
+
+    .section3 p {
+        font-size: 20px;
+        text-shadow: 1px 1px var(--COLOR-SEVEn)
+    }
+
+    .row2 {
+        display: block;
+    }
+
+    iframe {
+        width: 78%;
+    }
+}
+
+@media (min-width: 768px) {
+    /* Styles for screens wider than 768px */
+
+    .section3 {
+        min-height: 120vh;
+    }
+
+    .headingSection3 {
+        font-size: 40px;
+        padding: 0px 10px 50px;
+    }
+
+    .headingmainS3 {
+        font-size: 80px;
+        padding-bottom: 0;
+    }
+
+    .row2 {
+        display: flex;
+    }
+
+    .column2 {
+        flex: 50%;
+        padding: 10px 100px 50px;
+        font-size: 17px;
+        text-align: center;
+        line-height: 24px;
+    }
+
+    iframe {
+        width: 65%;
+    }
+}
+
+@media (min-width: 960px) {
+    /* Additional styles for screens wider than 960px */
+
+    .section4 {
+        padding-bottom: 50px;
+    }
+
+    .headingmainS4 {
+        font-size: 90px;
+    }
+
+    .headingSection4 {
+        padding-top: 20px;
+
+    }
+
+    .row2a {
+        width: 65%;
+        margin: 0 auto;
+    }
+}
+
+@media screen and (min-width: 1500px) {
+
+
+
+    .headingSection3 {
+        padding-top: 7rem;
+        padding-bottom: 5rem;
+
+    }
+
+    .column2 p {
+        font-size: 2rem;
+        line-height: 1.8rem;
+        padding-bottom: 5rem;
+    }
+
+    iframe {
+        width: 85%;
+        height: 45rem;
+        padding-bottom: 6rem;
+    }
+
+}
+
+/* SECTION 4 - 'New Music and Releases - City and its People' */
+
+.section4 {
+    height: auto;
+    background-color: var(--COLOR-SEVEN);
+    background-image: url('images/textures/texture10.jpg');
+    background-size: cover;
+    background-position: top center;
+    position: relative;
+    isolation: isolate;
+    font-size: 24px;
+    padding: 8px;
+}
+
+.section4::after {
+    content: '';
+    position: absolute;
+    background-size: cover;
+    background-position: center;
+    z-index: -1;
+    inset: 0;
+    background-color: var(--COLOR-SEVEN);
+    opacity: 0.95;
+}
+
+.headingmainS4 {
+    font-size: 45px;
+    font-family: var(--FONT-TWO);
+    color: var(--COLOR-TWO);
+
+    text-align: center;
+
+    padding: 20px 0 0 0;
+
+}
+
+.headingSection4 {
+    font-size: 30px;
+
+    opacity: 1;
+    padding: 70px 10px 50px;
+    font-family: var(--FONT-ONE), sans-serif;
+    text-align: center;
+    color: var(--COLOR-TWO);
+    text-shadow: 1px 1px 1px var(--COLOR-SEVEN);
+}
+
+.headingSection4a {
+    padding: 10px;
+}
+
+.headingSection4b {
+    padding: 10px;
+}
+
+.column2 {
+    font-family: var(--FONT-SEVEN);
+    flex: 50%;
+    padding: 10px 80px 30px 80px;
+    font-size: 17px;
+    text-align: center;
+    line-height: 24px;
+}
+
+iframe {
+    display: block;
+    margin: 0 auto;
+    padding-bottom: 30px;
+    width: 98%;
+
+}
+
+
+@media (min-width: 600px) {
+
+    .section4 p {
+        font-size: 20px;
+        text-shadow: 1px 1px var(--COLOR-SEVEn)
+    }
+
+    .row2 {
+        display: block;
+    }
+
+    iframe {
+        width: 78%;
+    }
+}
+
+@media (min-width: 768px) {
+
+    .section4 {
+        min-height: 120vh;
+    }
+
+    .headingSection4 {
+        font-size: 40px;
+        padding: 0px 10px 50px;
+    }
+
+    .headingmainS4 {
+        font-size: 80px;
+        padding-bottom: 0;
+    }
+
+    .row2 {
+        display: flex;
+    }
+
+    .column2 {
+        flex: 50%;
+        padding: 10px 100px 50px;
+        font-size: 17px;
+        text-align: center;
+        line-height: 24px;
+    }
+
+    iframe {
+        width: 65%;
+    }
+}
+
+@media (min-width: 960px) {
+
+    .section4 {
+        padding-bottom: 50px;
+    }
+
+    .headingmainS4 {
+        font-size: 90px;
+    }
+
+    .headingSection4 {
+        padding-top: 20px;
+
+    }
+
+    .row2a {
+        width: 65%;
+        margin: 0 auto;
+    }
+}
+
+
+@media screen and (min-width: 1500px) {
+
+
+
+    .headingSection4 {
+        padding-top: 7rem;
+        padding-bottom: 7rem;
+
+    }
+
+    .column2 p {
+        font-size: 2rem;
+        line-height: 1.8rem;
+        padding-bottom: 5rem;
+    }
+
+    iframe {
+        width: 85%;
+        height: 55rem;
+        padding-bottom: 6rem;
+    }
+
+}
+
+/* SECTION FIVE 'Stepping Stones in Lara's Musical Career' */
+
+.section5 {
+
+    height: auto;
+    color: var(--COLOR-TWO);
+
+    font-size: 24px;
+    position: relative;
+    isolation: isolate;
+
+}
+
+.section5::before {
+    content: "";
+    position: absolute;
+    background-image: url(images/LaraSection3.jpeg);
+    background-color: var(--COLOR-TWO);
+    background-size: cover;
+    background-position: 49% 31%;
+    z-index: -1;
+    inset: 0;
+
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    opacity: 0.3;
+}
+
+.headingSection5A {
+    font-size: 40px;
+    opacity: 0.81;
+    padding: 70px 50px 40px;
+    color: var(--COLOR-TWO);
+
+    font-family: var(--FONT-ONE), sans-serif;
+    text-align: center;
+}
+
+.row1 {
+    display: block;
+}
+
+.column1 {
+    flex: 50%;
+    padding: 20px 40px 20px;
+    font-size: 17px;
+    line-height: 24px;
+    text-align: center;
+}
+
+.s3p1 {
+    font-family: var(--FONT-SEVEN);
+}
+
+.s3p2 {
+    font-family: var(--FONT-SEVEN);
+    padding-bottom: 30px;
+}
+
+
+@media (min-width: 600px) {
+    .column1 {
+        font-size: 20px;
+    }
+
+    .headingSection5A {
+        padding: 70px 50px 30px;
+    }
+
+}
+
+@media (min-width: 768px) {
+
+    .row1 {
+        display: flex;
+        padding: 20px 70px 20px 70px;
+    }
+}
+
+@media (min-width: 960px) {
+    .row1 {
+        display: flex;
+        padding: 60px 100px 60px 100px;
+    }
+
+}
+
+@media screen and (min-width: 1500px) {
+
+    .headingSection5A {
+        padding-top: 7rem;
+        padding-bottom: 7rem;
+
+    }
+
+    .s5p1, .s5p2 {
+        font-size: 2rem;
+        line-height: 1.8rem;
+        padding-bottom: 5rem;
+    }
+
+    iframe {
+        width: 85%;
+        height: 45rem;
+        padding-bottom: 6rem;
+    }
+
+}
+
+/* ------------------------------------------- */
+
+
+/* SECTION SIX - 'The Music Experience you want to live' */
+
+
+.section6 {
+
+    background-color: var(--COLOR-FIVE);
+    /* background-image: url('images/textures/texture12.jpg'); */
+
+    /* color: var(--COLOR-THREE); */
+    /* text-shadow: 2px 1px 1px var(--COLOR-NINE); */
+    background-size: cover;
+    background-position: center;
+    /* border-radius: 20%; */
+
+    padding-bottom: 3rem;
+    position: relative;
+    isolation: isolate;
+}
+
+.section6:after {
+    content: "";
+    position: absolute;
+    background-size: cover;
+    background-position: center;
+    z-index: -1;
+    inset: 0;
+
+    opacity: 0.1;
+}
+
+.headingSection6 {
+    display: block;
+    height: auto;
+    text-align: center;
+    padding-top: 50px;
+    padding-left: 40px;
+    padding-right: 40px;
+
+    color: var(--COLOR-TWO);
+    /* text-shadow: 1px 1px 1px var(--COLOR-NINE); */
+    font-size: 30px;
+    font-family: var(--FONT-ONE), sans-serif;
+}
+
+
+.S6p1 {
+    text-align: center;
+    font-family: var(--FONT-THREE);
+    font-size: 17px;
+    padding: 35px 35px 0 35px;
+    line-height: 28px;
+    color: var(--COLOR-TWO)
+}
+
+/* .imagesculpture {
+    display: block;
+    height: 340px;
+    width: 320px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+    border-radius: 4%;
+    padding: 30px 12px 40px;
+}
+
+.debut {
+
+    text-align: center;
+    font-size: 26px;
+    line-height: 44px;
+    color: #9D4545;
+    text-shadow: 2px 2px #E5C2C2;
+    padding-top: 20px;
+} */
+
+.sib-form-container {
+    margin: 10px 20px 20px;
+}
+
+@media (min-width: 600px) {
+
+    .headingSection6 {
+        padding-top: 40px;
+        height: 100px;
+        font-size: 40px;
+    }
+
+    .S6p1 {
+        font-size: 18px;
+        padding: 65px 80px 0 80px;
+        line-height: 28px;
+    }
+
+    /* .imagesculpture {
+        display: block;
+        height: auto;
+        width: 60%;
+        margin-left: auto;
+        margin-right: auto;
+    
+        border-radius: 4%;
+        padding: 40px;
+    } */
+
+    /* .debut {
+        height: auto;
+        text-align: center;
+        font-size: 26px;
+        line-height: 64px;
+        color: #9D4545;
+        text-shadow: 2px 2px #E5C2C2;
+    } */
+
+    .sib-form {
+        padding: 0;
+    }
+
+}
+
+@media (min-width: 768px) {
+
+    .section6 {
+        height: 110vh;
+    }
+
+    .s6p1 {
+        font-size: 22px;
+        padding: 55px 120px 0 120px;
+        line-height: 28px;
+    }
+}
+
+@media (min-width: 768px) {
+    .p1 {
+        font-size: 22px;
+        padding: 55px 120px 100px 120px;
+        line-height: 28px;
+    }
+}
+
+@media screen and (min-width: 1500px) {
+
+    .headingSection6 {
+        padding-top: 7rem;
+        padding-bottom: 7rem;
+
+    }
+
+    .S6p1 {
+        font-size: 2rem;
+        line-height: 1.8rem;
+        padding-bottom: 8rem;
+        
+        text-align: center;
+        padding-left: 12rem; 
+        padding-right: 12rem; 
+    }
+
+    iframe {
+        width: 85%;
+        height: 45rem;
+        padding-bottom: 6rem;
+    }
+
+}
+
+/* ------------------------------------------- */
+
+
+
+
+
+
+
+/* --------------------------------------------- */
+
+/* SECTION SEVEN - Social Media Icons */
+
+.section7 {
+
+    padding-top: 20px;
+    background-image: url('images/castleWalls/petr-sidorov-UQ174knzj54-unsplash.jpg');
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    isolation: isolate;
+
+    min-height: 90vh;
+}
+
+.section7::after {
+    content: "";
+    position: absolute;
+    background-size: cover;
+    background-position: center;
+    z-index: -1;
+    inset: 0;
+    background-color: var(--COLOR-EIGHT);
+    opacity: 0.93;
+}
+
+.LaraAtPiano {
+    display: block;
+    opacity: 0.68;
+    margin: 0px auto;
+    padding: 0px;
+    width: 80%;
+
+    border-radius: 10%;
+}
+
+.LaraContactText {
+    padding: 20px 50px 30px 50px;
+    text-align: center;
+    line-height: 35px;
+
+    font-size: 26px;
+    /* font-weight: bold; */
+
+    color: var(--COLOR-TWO);
+    font-family: var(--FONT-SEVEN);
+
+
+    text-shadow: 1px 1px 1px var(--COLOR-SEVEN);
+}
+
+.LaraSMIs {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 21px;
+    text-align: center;
+    padding-bottom: 30px;
+}
+
+.LaraSMIs div {
+    background-color: var(--COLOR-TWO);
+    margin: 5px;
+    font-size: 21px;
+    border-radius: 10%;
+}
+
+.fa {
+    padding: 120px;
+    text-decoration: none;
+}
+
+.fa-facebook {
+    color: var(--COLOR-TEXT2);
+    text-decoration: none;
+    padding: 14px;
+}
+
+.fa-instagram {
+    color: var(--COLOR-TEXT2);
+    text-decoration: none;
+    padding: 14px;
+}
+
+.fa-youtube {
+    color: var(--COLOR-TEXT2);
+    text-decoration: none;
+    padding: 14px;
+}
+
+.fa-tiktok {
+    color: var(--COLOR-TEXT2);
+    text-decoration: none;
+    padding: 14px;
+}
+
+@media (min-width: 600px) {
+    .LaraAtPiano {
+        width: 60%;
+    }
+}
+
+@media (min-width: 768px) {
+
+    .section7 {
+        min-height: 90vh;
+    }
+
+    .section7flexdiv {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 50px 50px 50px;
+    }
+
+    .LaraContactText {
+        font-size: 22px;
+    }
+
+    .LaraAtPiano {
+        width: 50%;
+        /* height: auto; */
+        margin-left: auto;
+        margin-right: auto;
+        min-height: 240px;
+    }
+}
+
+@media (min-width: 950px) {
+    .LaraContactText {
+
+        padding-left: 180px;
+        padding-right: 180px;
+    }
+
+    .section5 {
+        display: block;
+        min-height: 90vh;
+
+    }
+
+    .LaraContactText {
+        padding: 40px 115px 40px;
+        font-size: 24px;
+    }
+}
+
+
+
+/* SECTION EIGHT - Shows and Contact*/
+
+.section8 {
+    position: relative;
+    height: 100vh;
+    color: var(--COLOR-TEXT);
+    font-size: 24px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.section8::before {
+    content: "";
+    position: absolute;
+    background-image: url(images/2019_ScreamingFieldsdoct.jpeg);
+    /* background-size: cover; */
+    background-position: 70% 30%;
+
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+
+    opacity: 0.35;
+}
+
+#Showsdiv {
+    /* background-color: var(--COLOR-EIGHT); */
+    padding: 100px 30px;
+}
+
+#Contactdiv {
+    background-color: var(--COLOR-EIGHT);
+    padding: 60px 44px;
+}
+
+.S6Para {
+    margin-top: 30px;
+    line-height: 30px;
+    font-size: 19px;
+}
+
+.h1S6 {
+    color: var(--COLOR-SEVEN);
+    text-shadow: 1px 1px 1px var(--COLOR-EIGHT);
+    /* font-weight: bold; */
+    font-size: 62px;
+    font-family: var(--FONT-TWO);
+}
+
+/* @media (min-width: 960px) {
+    .section6 {
+        min-height: 100vh;
+    }
+} */
+
+
+/* --------------------------------------------- */
+
+/* SECTION NINE - MEDIA COVERAGE/INTERVIEWS */
+
+.section9 {
+    position: relative;
+    height: 100vh;
+    color: var(--COLOR-TEXT);
+    font-size: 24px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.section9::before {
+    content: "";
+    position: absolute;
+    background-color: var(--COLOR-THREE);
+    /* background-image: url(images/2019_ScreamingFieldsdoct.jpeg); */
+    /* background-size: cover; */
+    background-position: 70% 30%;
+
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+
+    opacity: 0.35;
+}
+
+#Mediadiv {
+    /* background-color: var(--COLOR-EIGHT); */
+    padding: 100px 30px;
+}
+
+.S7Para {
+    margin-top: 30px;
+    line-height: 30px;
+    font-size: 19px;
+}
+
+.h1S7 {
+    color: var(--COLOR-SEVEN);
+    text-shadow: 1px 1px 1px var(--COLOR-EIGHT);
+    /* font-weight: bold; */
+    font-size: 62px;
+    font-family: var(--FONT-ONE);
+}
+
+/* @media (min-width: 960px) {
+    .section6 {
+        min-height: 100vh;
+    }
+} */
+
+
+/* --------------------------------------------- */
+
+/* FOOTER */
+
+.divfooter {
+    background-color: var(--COLOR-SIX);
+    line-height: 20px;
+    height: auto;
+    display: flex;
+}
+
+.divF1a {
+    width: 50%;
+    text-align: left;
+    padding: 20px;
+    color: var(--COLOR-SEVEN);
+    /* text-shadow: 1px 1px 1px var(--COLOR-SEVEN); */
+}
+
+.divF1b {
+    width: 50%;
+    text-align: right;
+    padding: 20px;
+    color: var(--COLOR-SEVEN);
+    /* text-shadow: 1px 1px 1px var(--COLOR-SEVEN); */
+}
+
+.foolink {
+    text-decoration: none;
+    color: var(--FONT-SEVEN);
+}
+
+.foolink:hover {
+    color: var(--COLOR-SEVEN);
+}
+
+
+
+@media (min-width: 600px) {
+
+    .divfooter {
+        line-height: 10px;
+    }
+
+    .foolink {
+        font-size: 20px;
+        text-align: center;
+
+    }
+
+
+    .divF1b {
+        font-size: 20px;
+        text-align: center;
+    }
+}
+
+/* --------------------------------------------- */
+/* --------------------------------------------- */
+/* --------------------------------------------- */
+/* END  */
